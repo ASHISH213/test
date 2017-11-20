@@ -1,15 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>{{ title }}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Narrow Jumbotron Template for Bootstrap</title>
+
+  <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="narrow-jumbotron.css" rel="stylesheet">
 </head>
 
 <body>
-  <h1>{{ title }}</h1>
+
+  <div class="container">
+    <header class="header clearfix">
+      <h3 class="text-muted">Youtube Downloader</h3>
+    </header>
+
+    <main role="main">
+
+      <div class="jumbotron">
+        <form action="/submit" method="POST">
+            <div class="form-group">
+              <label for="inputYoutube">Youtube URL</label>
+              <input type="text" class="form-control" id="inputYoutube" aria-describedby="youtubeHelp" placeholder="Enter Youtube URL...">
+              <small id="youtubeHelp" class="form-text text-muted"></small>
+            </div>
+        </form>
+        <p>
+          <a class="btn btn-lg btn-success" href="#" role="button">下載影音</a>
+        </p>
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <p>&copy; RGY WorkShop 2017</p>
+    </footer>
+
+  </div>
+  <!-- /container -->
 </body>
 
 </html>
