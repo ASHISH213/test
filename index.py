@@ -6,7 +6,8 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     title = 'Youtube Downloader'
-    return render_template('index.html', title=title)
+    filename = request.args.get('filename')
+    return render_template('index.html', title=title, filename=filename)
 
 @app.route('/submit', methods=['POST'])
 def post_submit():
